@@ -1,0 +1,26 @@
+version: '3'
+services:
+  app:
+    build: .
+    volumes:
+      - .:/go/src/github.com/moemoe89/practicing-elasticsearch-golang
+    container_name: practice_elasticsearch_app
+    restart: always
+    ports:
+      - "8787:8787"
+    tty: true
+    depends_on:
+      - elasticsearch
+    networks:
+      - fullstack
+  elasticsearch:
+    container_name: elasticsearch
+    image: elasticsearch:6.8.6
+    ports:
+      - "9201:9200"
+    tty: true
+    networks:
+      - fullstack
+networks:
+  fullstack:
+    driver: bridge

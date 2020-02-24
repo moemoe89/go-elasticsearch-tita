@@ -45,7 +45,7 @@ $ mv <cloned directory> practicing-elasticsearch-golang
 ## Running Application
 Make config file for local :
 ```
-$ cp config-sample.json config-local.json
+$ cp config-sample.json config.json
 ```
 Build
 ```
@@ -54,4 +54,22 @@ $ go build
 Run
 ```
 $ go run main.go
+```
+
+## How to Run with Docker
+Make config file for docker :
+```
+$ cp config-sample.json config.json
+```
+Build
+```
+$ docker-compose build
+```
+Run
+```
+$ docker-compose up
+```
+Stop
+```
+$ docker-compose down
 ```
