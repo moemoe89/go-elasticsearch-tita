@@ -1,0 +1,6 @@
+{
+  "port": "8787",
+  "elasticseach": {
+    "url": "http://:9200"
+  }
+}

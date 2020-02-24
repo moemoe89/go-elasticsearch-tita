@@ -1,32 +1,36 @@
+//
+//  Practicing Elasticsearch
+//
+//  Copyright © 2016. All rights reserved.
+//
+
 package main
 
 import (
-	"practicing-elasticsearch-golang/controllers"
+	ap "github.com/moemoe89/practicing-elasticsearch-golang/api"
+	conf "github.com/moemoe89/practicing-elasticsearch-golang/config"
+	"github.com/moemoe89/practicing-elasticsearch-golang/routers"
 
-	"time"
+	"fmt"
 
-	"github.com/gin-gonic/gin"
-	"github.com/itsjamie/gin-cors"
+	"github.com/DeanThompson/ginpprof"
 )
 
 func main() {
-	r := gin.Default()
+	client, err := conf.InitElasticsearch()
+	if err != nil {
+		panic(err)
+	}
 
-	r.Use(cors.Middleware(cors.Config{
-		Origins:        "*",
-		Methods:        "GET, PUT, POST, DELETE",
-		RequestHeaders: "Origin, Authorization, Content-Type",
-		ExposedHeaders: "",
-		MaxAge: 50 * time.Second,
-		Credentials: true,
-		ValidateHeaders: false,
-	}))
+	log := conf.InitLog()
 
-	r.GET("/ping", controllers.Ping)
-	r.GET("/elasticsearch/destination", controllers.ElasticsearchDestinationGet)
-	r.GET("/elasticsearch/destination/:id", controllers.ElasticsearchDestinationDetail)
-	r.POST("/elasticsearch/destination", controllers.ElasticsearchDestinationAdd)
-	r.DELETE("/elasticsearch/destination/:id", controllers.ElasticsearchDestinationDelete)
+	repo := ap.NewElasticsearchRepository(client)
+	svc := ap.NewService(log, repo)
 
-	r.Run()
+	app := routers.GetRouter(log, svc)
+	ginpprof.Wrap(app)
+	err = app.Run(":" + conf.Configuration.Port)
+	if err != nil {
+		panic(fmt.Sprintf("Can't start the app: %s", err.Error()))
+	}
 }
