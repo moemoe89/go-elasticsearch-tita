@@ -17,7 +17,7 @@ import (
 
 // ConfigurationModel represent the configuration model
 type ConfigurationModel struct {
-	Port  string `json:"port"`
+	Port          string `json:"port"`
 	Elasticsearch struct {
 		URL string `json:"url"`
 	} `json:"elasticsearch"`

@@ -43,7 +43,7 @@ func (ct *ctrl) Create(c *gin.Context) {
 	}
 
 	if exists == false {
-		c.JSON(status, model.NewGenericResponse(http.StatusNotFound, cons.ERR, []string{"Index not found"}, nil))
+		c.JSON(http.StatusNotFound, model.NewGenericResponse(http.StatusNotFound, cons.ERR, []string{"Index not found"}, nil))
 		return
 	}
 
@@ -71,7 +71,7 @@ func (ct *ctrl) Find(c *gin.Context) {
 	}
 
 	if exists == false {
-		c.JSON(status, model.NewGenericResponse(http.StatusNotFound, cons.ERR, []string{"Index not found"}, nil))
+		c.JSON(http.StatusNotFound, model.NewGenericResponse(http.StatusNotFound, cons.ERR, []string{"Index not found"}, nil))
 		return
 	}
 
@@ -94,7 +94,7 @@ func (ct *ctrl) FindByID(c *gin.Context) {
 	}
 
 	if exists == false {
-		c.JSON(status, model.NewGenericResponse(http.StatusNotFound, cons.ERR, []string{"Index not found"}, nil))
+		c.JSON(http.StatusNotFound, model.NewGenericResponse(http.StatusNotFound, cons.ERR, []string{"Index not found"}, nil))
 		return
 	}
 
@@ -117,7 +117,7 @@ func (ct *ctrl) Delete(c *gin.Context) {
 	}
 
 	if exists == false {
-		c.JSON(status, model.NewGenericResponse(http.StatusNotFound, cons.ERR, []string{"Index not found"}, nil))
+		c.JSON(http.StatusNotFound, model.NewGenericResponse(http.StatusNotFound, cons.ERR, []string{"Index not found"}, nil))
 		return
 	}
 

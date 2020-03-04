@@ -6,6 +6,7 @@
 
 package form
 
+// DestinationForm represent the destination request model
 type DestinationForm struct {
 	ID               int      `json:"id"`
 	Name             string   `json:"name"`
@@ -22,6 +23,7 @@ type DestinationForm struct {
 	City             CityForm `json:"city"`
 }
 
+// CityForm represent the city request model
 type CityForm struct {
 	ID            int    `json:"id"`
 	City          string `json:"city"`

@@ -47,6 +47,10 @@ Make config file for local :
 ```
 $ cp config-sample.json config.json
 ```
+Change Elasticsearch address based on your config :
+```
+http://:9200
+```
 Build
 ```
 $ go build
@@ -61,6 +65,10 @@ Make config file for docker :
 ```
 $ cp config-sample.json config.json
 ```
+Change Elasticsearch address based on your docker config :
+```
+http://elasticsearch:9200
+```
 Build
 ```
 $ docker-compose build
@@ -73,3 +81,22 @@ Stop
 ```
 $ docker-compose down
 ```
+
+## How to Run Unit Test
+Run
+```
+$ go test ./...
+```
+Run with cover
+```
+$ go test ./... -cover
+```
+Run with HTML output
+```
+$ go test ./... -coverprofile=c.out && go tool cover -html=c.out
+```
+
+
+## License
+
+MIT

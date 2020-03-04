@@ -17,7 +17,7 @@ import (
 
 const (
 	elasticSearchIndex = "destination"
-	elasticSearchType = "destination"
+	elasticSearchType  = "destination"
 )
 
 // Repository represent the repositories
