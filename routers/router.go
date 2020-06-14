@@ -7,8 +7,8 @@
 package routers
 
 import (
-	ap "github.com/moemoe89/practicing-elasticsearch-golang/api"
-	mw "github.com/moemoe89/practicing-elasticsearch-golang/api/middleware"
+	ap "github.com/moemoe89/go-elasticsearch-tita/api"
+	mw "github.com/moemoe89/go-elasticsearch-tita/api/middleware"
 
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"

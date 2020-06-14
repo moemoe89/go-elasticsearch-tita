@@ -7,9 +7,9 @@
 package main
 
 import (
-	ap "github.com/moemoe89/practicing-elasticsearch-golang/api"
-	conf "github.com/moemoe89/practicing-elasticsearch-golang/config"
-	"github.com/moemoe89/practicing-elasticsearch-golang/routers"
+	ap "github.com/moemoe89/go-elasticsearch-tita/api"
+	conf "github.com/moemoe89/go-elasticsearch-tita/config"
+	"github.com/moemoe89/go-elasticsearch-tita/routers"
 
 	"fmt"
 

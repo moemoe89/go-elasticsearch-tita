@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/moemoe89/practicing-elasticsearch-golang.svg?branch=master)](https://travis-ci.org/moemoe89/practicing-elasticsearch-golang)
-[![Coverage Status](https://coveralls.io/repos/github/moemoe89/practicing-elasticsearch-golang/badge.svg?branch=master)](https://coveralls.io/github/moemoe89/practicing-elasticsearch-golang?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/moemoe89/practicing-elasticsearch-golang)](https://goreportcard.com/report/github.com/moemoe89/practicing-elasticsearch-golang)
+[![Build Status](https://travis-ci.org/moemoe89/go-elasticsearch-tita.svg?branch=master)](https://travis-ci.org/moemoe89/go-elasticsearch-tita)
+[![Coverage Status](https://coveralls.io/repos/github/moemoe89/go-elasticsearch-tita/badge.svg?branch=master)](https://coveralls.io/github/moemoe89/go-elasticsearch-tita?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/github.com/moemoe89/go-elasticsearch-tita)](https://goreportcard.com/report/github.com/moemoe89/go-elasticsearch-tita)
 
-# PRACTICING-ELASTICSEARCH-GOLANG #
+# GO-ELASTICSEARCH-TITA #
 
 Practicing Elasticsearch Using Golang (Gin Gonic Framework) as Programming Language, Elasticsearch as Search Engine Based
 
@@ -13,7 +13,7 @@ Your project directory structure should look like this
   |
   +--+ src/github.com/moemoe89
   |  |
-  |  +--+ practicing-elasticsearch-golang/
+  |  +--+ go-elasticsearch-tita/
   |     |
   |     +--+ main.go
   |        + api/
@@ -39,7 +39,7 @@ Your project directory structure should look like this
 $ mkdir -p src/github.com/moemoe89
 $ cd src/github.com/moemoe89
 $ git clone <url>
-$ mv <cloned directory> practicing-elasticsearch-golang
+$ mv <cloned directory> go-elasticsearch-tita
 ```
 
 ## Running Application

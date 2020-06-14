@@ -1,4 +1,4 @@
-module github.com/moemoe89/practicing-elasticsearch-golang
+module github.com/moemoe89/go-elasticsearch-tita
 
 go 1.13
 

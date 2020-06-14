@@ -7,8 +7,8 @@
 package api_test
 
 import (
-	"github.com/moemoe89/practicing-elasticsearch-golang/config"
-	"github.com/moemoe89/practicing-elasticsearch-golang/routers"
+	"github.com/moemoe89/go-elasticsearch-tita/config"
+	"github.com/moemoe89/go-elasticsearch-tita/routers"
 
 	"net/http"
 	"net/http/httptest"

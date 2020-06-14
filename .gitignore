@@ -50,7 +50,7 @@ inuit_rsa.pub
 *.iml
 
 # binary
-practicing-elasticsearch-golang
+go-elasticsearch-tita
 app
 
 # out

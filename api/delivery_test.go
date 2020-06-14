@@ -7,10 +7,10 @@
 package api_test
 
 import (
-	"github.com/moemoe89/practicing-elasticsearch-golang/api/api_struct/form"
-	"github.com/moemoe89/practicing-elasticsearch-golang/api/mocks"
-	"github.com/moemoe89/practicing-elasticsearch-golang/config"
-	"github.com/moemoe89/practicing-elasticsearch-golang/routers"
+	"github.com/moemoe89/go-elasticsearch-tita/api/api_struct/form"
+	"github.com/moemoe89/go-elasticsearch-tita/api/mocks"
+	"github.com/moemoe89/go-elasticsearch-tita/config"
+	"github.com/moemoe89/go-elasticsearch-tita/routers"
 
 	"encoding/json"
 	"errors"

@@ -7,9 +7,9 @@
 package api
 
 import (
-	"github.com/moemoe89/practicing-elasticsearch-golang/api/api_struct/form"
-	"github.com/moemoe89/practicing-elasticsearch-golang/api/api_struct/model"
-	cons "github.com/moemoe89/practicing-elasticsearch-golang/constant"
+	"github.com/moemoe89/go-elasticsearch-tita/api/api_struct/form"
+	"github.com/moemoe89/go-elasticsearch-tita/api/api_struct/model"
+	cons "github.com/moemoe89/go-elasticsearch-tita/constant"
 
 	"net/http"
 
